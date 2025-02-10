@@ -9,7 +9,7 @@
     sudo apt install graphviz graphviz-dev
 2. Clone o repositório:
     ```bash
-    git clone https://github.com/JoseJaan/automata](https://github.com/BernardoPavani/API_MT.git)
+    git clone https://github.com/BernardoPavani/API_MT.git
 3. Crie um ambiente virtual:
    ```bash
    python -m venv venv
