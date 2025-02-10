@@ -1,0 +1,147 @@
+/* static/styles.css */
+* /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    padding: 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #cfd8dc;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+option {
+    color: black
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+.result-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+.result-container pre {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Estilos para mensagens de erro */
+.error {
+    color: #ff5252;
+    background: rgba(255, 82, 82, 0.2);
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Estilos para mensagens de sucesso */
+.success {
+    color: #66bb6a;
+    background: rgba(102, 187, 106, 0.2);
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
